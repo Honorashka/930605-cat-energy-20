@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Михалев](https://up.htmlacademy.ru/adaptive/20/user/930605).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Савотиков] (https://htmlacademy.ru/profile/id98316).
 
 ---
 
