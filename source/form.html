@@ -35,91 +35,91 @@
 <main class="page-form">
   <section class="program-form">
     <h1 class="program-form__title">Подбор программы</h1>
-    <p class="program-form__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+    <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="main-form" method="post" action="https://echo.htmlacademy.ru" aria-label="Подбор программы">
       <ul class="main-form__list">
-        <li class="main-form-info__item">
-          <label class="main-form__row" for="main-form-name">ИМЯ:*</label>
-          <input class="main-form__input" id="main-form-name" name="main-form-name" type="text" placeholder="БАРСИК"
+        <li class="main-form__item">
+          <label class="main-form__label" for="name">Имя:*</label>
+          <input class="main-form__input" id="name" name="name" type="text" placeholder="БАРСИК"
                  required>
         </li>
-        <li class="main-form-info__item">
-          <label class="main-form__row" for="main-form-weight">ВЕС (КГ):*</label>
-          <input class="main-form__input" id="main-form-weight" name="main-form-weight" type="number" placeholder="7"
+        <li class="main-form__item">
+          <label class="main-form__label" for="weight">Вес (кг):*</label>
+          <input class="main-form__input" id="weight" name="weight" type="number" placeholder="7"
                  required>
         </li>
-        <li class="main-form-info__item">
-          <label class="main-form__row" for="main-form-age">ВОЗРАСТ (ЛЕТ):</label>
-          <input class="main-form__input" id="main-form-age" name="main-form-age" type="number" placeholder="7">
+        <li class="main-form__item">
+          <label class="main-form__label" for="age">Возраст (лет):</label>
+          <input class="main-form__input" id="age" name="age" type="number" placeholder="7">
         </li>
       </ul>
-      <fieldset class="main-form-radiobtn">
-        <ul class="main-form-radiobtn__list">
-          <li class="main-form-radiobtn__item">
-            <input class="main-form-radiobtn__input" id="main-form-radiobtn-slimming" type="radio" checked
-                   name="main-form-radiobtn-program-selection" value="slimming">
-            <label class="main-form-radiobtn__row" for="main-form-radiobtn-slimming" tabindex="0">ПОХУДЕНИЕ</label>
+      <fieldset class="main-form__fieldset">
+        <ul class="main-form__list">
+          <li class="main-form__item">
+            <input class="main-form__radio" id="slimming" type="radio" checked
+                   name="program-selection" value="slimming">
+            <label class="main-form__radio-label" for="slimming" tabindex="0">Похудение</label>
           </li>
-          <li class="main-form-radiobtn__item">
-            <input class="main-form-radiobtn__input" id="main-form-radiobtn-weight" type="radio"
-                   name="main-form-radiobtn-program-selection" value="weight">
-            <label class="main-form-radiobtn__row" for="main-form-radiobtn-weight" tabindex="0">НАБОР МАССЫ</label>
+          <li class="main-form__item">
+            <input class="main-form__radio" id="weight-gain" type="radio"
+                   name="program-selection" value="weight-gain">
+            <label class="main-form__radio-label" for="weight-gain" tabindex="0">Набор массы</label>
           </li>
-          <li class="main-form-radiobtn__item">
-            <input class="main-form-radiobtn__input" id="main-form-radiobtn-other" type="radio"
-                   name="main-form-radiobtn-program-selection" value="other">
-            <label class="main-form-radiobtn__row" for="main-form-radiobtn-other" tabindex="0">НЕ ЗНАЮ (НУЖЕН ВАШ
-              СОВЕТ)</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="main-form-contact">
-        <legend class="main-form-contact__title">Контактные данные<br>(владельца кота)</legend>
-        <ul class="main-form-contact__list">
-          <li class="main-form-contact__item">
-            <label class="main-form-contact__row" for="main-form-contact-email">E-MAIL:*</label>
-            <input class="main-form-contact__input" id="main-form-contact-email" name="main-form-contact-email" type="email" placeholder="KUKLACHEV@GMAIL.COM">
-          </li>
-          <li class="main-form-contact__item">
-            <label class="main-form-contact__row" for="main-form-contact-phone">ТЕЛЕФОН:*</label>
-            <input class="main-form-contact__input" id="main-form-contact-phone" name="main-form-contact-phone" type="number" placeholder="8 (960) 900-60-90">
+          <li class="main-form__item">
+            <input class="main-form__radio" id="other" type="radio"
+                   name="program-selection" value="other">
+            <label class="main-form__radio-label" for="other" tabindex="0">Не знаю (нуже ваш
+              совет)</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-form-comment">
-        <legend class="main-form-comment__title">Комментарий</legend>
-        <label for="main-form-comment-text"></label>
-        <textarea name="main-form-comment-text" id="main-form-comment-text" cols="30" rows="10" required placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
-      <fieldset class="main-form-add">
-        <legend class="main-form-add__title">Дополнительно</legend>
-        <ul class="main-form-add__list">
-          <li class="main-form-add__item">
-            <input class="main-form-add__input" id="main-form-add-sugaroff" type="checkbox" checked name="main-form-add-sugaroff">
-            <label class="main-form-add__row" for="main-form-add-sugaroff" tabindex="0">САХАРОЗАМЕНИТЕЛЬ</label>
+      <fieldset class="main-form__contact-fieldset">
+        <legend class="main-form__contact-title">Контактные данные (владельца кота)</legend>
+        <ul class="main-form__contact-list">
+          <li class="main-form__contact-item">
+            <label class="main-form__contact-label" for="email">E-mail:*</label>
+            <input class="main-form__contact-input" id="email" name="email" type="email" placeholder="KUKLACHEV@GMAIL.COM">
           </li>
-          <li class="main-form-add__item">
-            <input class="main-form-add__input" id="main-form-add-water" type="checkbox" name="main-form-add-water">
-            <label class="main-form-add__row" for="main-form-add-water" tabindex="0">ПИТЬЕВАЯ ВОДА</label>
-          </li>
-          <li class="main-form-add__item">
-            <input class="main-form-add__input" id="main-form-add-milk" type="checkbox" name="main-form-add-milk">
-            <label class="main-form-add__row" for="main-form-add-milk" tabindex="0">МОЛОКО</label>
-          </li>
-          <li class="main-form-add__item">
-            <input class="main-form-add__input" id="main-form-add-vitamines" type="checkbox" name="main-form-add-vitamines">
-            <label class="main-form-add__row" for="main-form-add-vitamines" tabindex="0">ВИТАМИНЫ</label>
+          <li class="main-form__contact-item">
+            <label class="main-form__contact-label" for="phone">Телефон:*</label>
+            <input class="main-form__contact-input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
-      <button type="submit">Отправить</button>
+      <fieldset class="main-form__comment-fieldset">
+        <legend class="main-form__comment-title">Комментарий</legend>
+        <label class="main-form__comment-label visually-hidden" for="text">Комментарий</label>
+        <textarea name="main-form__comment-text" id="text" cols="30" rows="10" required placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="main-form__add-fieldset">
+        <legend class="main-form__add-title">Дополнительно</legend>
+        <ul class="main-form__add-list">
+          <li class="main-form__add-item">
+            <input class="main-form__checkbox" id="sugaroff" type="checkbox" checked name="sugaroff">
+            <label class="main-form__checkbox-label" for="sugaroff" tabindex="0">Сахарозаменитель</label>
+          </li>
+          <li class="main-form__add-item">
+            <input class="main-form__checkbox" id="water" type="checkbox" name="water">
+            <label class="main-form__checkbox-label" for="water" tabindex="0">Питьева вода</label>
+          </li>
+          <li class="main-form__add-item">
+            <input class="main-form__checkbox" id="milk" type="checkbox" name="milk">
+            <label class="main-form__checkbox-label" for="milk" tabindex="0">Молоко</label>
+          </li>
+          <li class="main-form__add-item">
+            <input class="main-form__checkbox" id="vitamines" type="checkbox" name="vitamines">
+            <label class="main-form__checkbox-label" for="vitamines" tabindex="0">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="main-form__button button" type="submit">Отправить</button>
       <p class="main-form__required">* - Обязательные поля</p>
     </form>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__ cooperation cooperation">
+  <div class="page-footer__cooperation cooperation">
     <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
     <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     <img class="cooperation__img" src="https://via.placeholder.com/320x362" alt="Карта местонахождения офиса">
