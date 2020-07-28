@@ -1,0 +1,86 @@
+.promo{
+  background: $basic_green;
+  background: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.page-main__title{
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic_white;
+  margin: 0;
+  padding: 27px 35px 25px 36px;
+  text-align: center;
+}
+.page-main__text{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic_white;
+  margin: 0;
+  padding-right: 62px;
+  padding-left: 60px;
+  text-align: center;
+}
+.program{
+  background: $basic_white;
+}
+.program__item{
+  background: $basic_grey;
+  margin-top: 20px;
+}
+.program__title{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic_black;
+}
+.program__text{
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+.program__catalog-link{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+.advantages{
+  background: $basic_white;
+}
+.advantages__item{
+  margin: 0;
+  margin-top: 20px;
+}
+.advantages__title{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic_black;
+}
+.advantages__text{
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}

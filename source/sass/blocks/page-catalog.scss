@@ -1,0 +1,55 @@
+.page-catalog{
+  background: $basic_white;;
+}
+.page-catalog_title{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color:$basic_black;
+}
+.products-item{
+  margin-bottom: 19px;
+  border-top: 1px solid $basis_grey-2;
+  border-bottom: 1px solid $basis_grey-2;
+}
+.products-item__name{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+}
+.products-name__text{
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color:$special_dark-grey;
+}
+.products-additional-title{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color:$special_black;
+  text-transform: uppercase;
+}
+.products-additional-text{
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color:$special_dark-grey;
+}
+.products-additional__to-all{
+  font-size: 16px;
+  line-height: 0px;
+  background: $basic-grey;
+  color: $special_dark-grey;
+}

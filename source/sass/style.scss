@@ -1,1 +1,45 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+       url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+$basic_white: #ffffff;
+$basic_green: #68B738;
+$basic_green-2:#5EAA2F;
+$basic_grey:#F2F2F2;
+$basis_grey-2:#EBEBEB;
+$basic_black: #000000;
+$special_grey:#CDCDCD;
+$special_grey_2:#666666;
+$special_grey-3: #D9D9D9;
+$special_dark-grey:#444444;
+$special_dark-grey-2:#222222;
+$special_black: #111111;
+
+$font: "Oswald", "Arial", sans-serif;
+
+.button {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: $basic_green;
+  color: $basic_white;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-catalog.scss";
+
