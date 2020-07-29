@@ -1,0 +1,19 @@
+.add-goods-list__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid $special_grey;
+}
+
+.add-goods-list__title {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+
+.add-goods-list__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
