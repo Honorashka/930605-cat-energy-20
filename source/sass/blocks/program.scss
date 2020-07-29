@@ -1,11 +1,13 @@
-.program{
+.program {
   background: $basic_white;
 }
-.program__item{
+
+.program__item {
   background: $basic_grey;
   margin-top: 20px;
 }
-.program__title{
+
+.program__title {
   font-family: $font;
   font-style: normal;
   font-weight: normal;
@@ -13,7 +15,8 @@
   line-height: 37px;
   color: $basic_black;
 }
-.program__text{
+
+.program__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -21,7 +24,8 @@
   line-height: 18px;
   color: $special_dark-grey;
 }
-.program__catalog-link{
+
+.program__catalog-link {
   font-family: $font;
   font-style: normal;
   font-weight: normal;
