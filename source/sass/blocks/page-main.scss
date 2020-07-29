@@ -1,7 +1,5 @@
 .page-main__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font;
   font-size: 36px;
   line-height: 36px;
   color: $basic_white;
@@ -12,8 +10,6 @@
 
 .page-main__text {
   font-family: $font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

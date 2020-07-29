@@ -1,5 +1,5 @@
 .advantages {
-  background: $basic_white;
+  background-color: $basic_white;
 }
 
 .advantages__item {
@@ -9,8 +9,6 @@
 
 .advantages__title {
   font-family: $font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $basic_black;
@@ -18,8 +16,6 @@
 
 .advantages__text {
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
