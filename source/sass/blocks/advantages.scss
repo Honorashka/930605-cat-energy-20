@@ -1,0 +1,22 @@
+.advantages {
+  background-color: $basic_white;
+}
+
+.advantages__item {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.advantages__title {
+  font-family: $font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic_black;
+}
+
+.advantages__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}

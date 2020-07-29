@@ -1,0 +1,19 @@
+.products-item {
+  margin-bottom: 19px;
+  border-top: 1px solid $basis_grey-2;
+  border-bottom: 1px solid $basis_grey-2;
+}
+
+.products-item__name {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+}
+
+.products-item__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}

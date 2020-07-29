@@ -1,0 +1,30 @@
+.program {
+  background-color: $basic_white;
+}
+
+.program__item {
+  background-color: $basic_grey;
+  margin-top: 20px;
+}
+
+.program__title {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic_black;
+}
+
+.program__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.program__catalog-link {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic_black;
+}

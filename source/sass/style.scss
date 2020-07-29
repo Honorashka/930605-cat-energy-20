@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@import "general/normalize.scss";
+@import "general/fonts.scss";
+@import "general/variables.scss";
+@import "general/helpers.scss";
+@import "general/general.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/site-list.scss";
+@import "blocks/products-item.scss";
+@import "blocks/products-additional.scss";
+@import "blocks/promo.scss";
+@import "blocks/program.scss";
+@import "blocks/advantages.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/cooperation.scss";
