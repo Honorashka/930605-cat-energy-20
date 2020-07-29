@@ -1,0 +1,67 @@
+.main-form__label {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.main-form__input {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.main-form__radio-label {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+
+.main-form__title {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+  padding-top: 26px;
+}
+
+.main-form__textarea::placeholder {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.main-form__checkbox-label {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+
+.main-form__item {
+  margin-bottom: 25px;
+}
+
+.main-form__fieldset {
+  border: none;
+}
+
+.main-form__fieldset--program {
+  border-top: 1px solid $special_grey-3;
+  border-bottom: 1px solid $special_grey-3;
+}
+
+.main-form__required {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic_black;
+}
