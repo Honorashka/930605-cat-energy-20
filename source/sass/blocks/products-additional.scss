@@ -1,0 +1,19 @@
+.products-additional__title{
+  font-family: $font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_black;
+  text-transform: uppercase;
+}
+.products-additional__text{
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+.products-additional__to-all{
+  font-size: 16px;
+  line-height: 0px;
+  background: $basic-grey;
+  color: $special_dark-grey;
+}

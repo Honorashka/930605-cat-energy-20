@@ -1,21 +1,5 @@
-.page-footer_cooperation{
-  background: $basic_white;
-}
-.cooperation__title{
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_black;
-}
-.cooperation__text{
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: $special_dark-grey;
+.page-footer__cooperation{
+  background-color: $basic_white;
 }
 .page-footer__text-logo-wrapper{
   padding-bottom: 32px;
@@ -27,6 +11,6 @@
   padding-bottom: 20px;
 }
 .page-footer__link-wrapper{
-  background:$basic_grey;
+  background-color: $basic_grey;
 }
 
