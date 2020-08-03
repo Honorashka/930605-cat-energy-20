@@ -1,7 +1,26 @@
-.promo {
+.promo{
   background-color: $basic_green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $basic_white;
+  }
 }
+
+.promo__wrapper {
+  margin: 0 auto;
+  min-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+}
+
+

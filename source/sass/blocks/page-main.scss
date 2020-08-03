@@ -6,6 +6,18 @@
   margin: 0;
   padding: 27px 35px 25px 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $basic_black;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic_black;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__text {
@@ -18,4 +30,16 @@
   padding-right: 62px;
   padding-left: 60px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $basic_black;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic_black;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

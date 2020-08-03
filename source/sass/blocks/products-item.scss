@@ -1,7 +1,6 @@
 .products-item {
   margin-bottom: 19px;
   border-top: 1px solid $basis_grey-2;
-  border-bottom: 1px solid $basis_grey-2;
 }
 
 .products-item__name {
@@ -9,6 +8,16 @@
   font-size: 16px;
   line-height: 20px;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .products-item__text {
@@ -16,4 +25,13 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
