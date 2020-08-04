@@ -1,5 +1,18 @@
 .products-add-goods {
   background-color: $basic_white;
+  margin: 0 auto;
+  min-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 60px;
+  }
 }
 
 .products-add-goods__title {
@@ -9,4 +22,16 @@
   color: $basic_black;
   padding-bottom: 35px;
   border-bottom: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.products-add-goods__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

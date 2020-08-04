@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 0;
+    padding: 0 60px;
   }
 }
 
@@ -47,5 +47,24 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.cooperation__img--wrapper {
+  display: block;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
   }
 }

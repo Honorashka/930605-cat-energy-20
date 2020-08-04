@@ -4,6 +4,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 280px;
+  height: 289px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: 280px;
+    height: 289px;
+  }
 }
 
 .add-goods-bonus__text {
@@ -11,4 +26,5 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic_white;
+  width: 161px;
 }
