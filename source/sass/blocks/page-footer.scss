@@ -7,6 +7,11 @@
   padding: 0 20px;
   padding-bottom: 32px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-width: 130px;
+  }
 }
 
 .page-footer__list {
@@ -22,6 +27,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    min-width: 130px;
   }
 }
 
@@ -44,7 +50,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1220px;
+    min-width: 1220px;
     padding: 0 60px;
   }
 }
@@ -54,4 +60,10 @@
   justify-content: space-between;
   min-width: 280px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-width: 163px;
+    justify-content: flex-end;
+  }
 }
