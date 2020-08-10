@@ -17,6 +17,20 @@
 
 .site-list__item {
   border-top: 1px solid $special_grey-4;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    margin-right: 34px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .site-list__link {
@@ -27,7 +41,31 @@
   text-transform: uppercase;
   color: $basic_black;
 
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 1;
+      border-bottom: 2px solid $basic_green;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     color: $basic_white;
+
+    &:active {
+      opacity: 1;
+      border-bottom: 2px solid $basic_white;
+    }
   }
 }

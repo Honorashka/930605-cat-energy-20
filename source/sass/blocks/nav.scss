@@ -1,0 +1,6 @@
+.nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+    padding-top: 42px;
+  }
+}
