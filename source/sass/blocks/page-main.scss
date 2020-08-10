@@ -4,13 +4,17 @@
   line-height: 36px;
   color: $basic_white;
   margin: 0;
-  padding: 27px 35px 25px 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $basic_black;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
+    padding-left: 89px;
+    width: 516px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,19 +31,23 @@
   text-transform: uppercase;
   color: $basic_white;
   margin: 0;
-  padding-right: 62px;
-  padding-left: 60px;
+  padding-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $basic_black;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
+    padding-left: 89px;
   }
 
   @media (min-width: $desktop-width) {
     color: $basic_black;
     font-size: 20px;
     line-height: 20px;
+    order: 4;
+    position: absolute;
+    top: 155px;
   }
 }

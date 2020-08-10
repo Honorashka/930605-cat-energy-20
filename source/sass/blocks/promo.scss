@@ -11,13 +11,55 @@
   }
 }
 
+.promo__program {
+  display: block;
+  margin-top: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 280px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 250px;
+    left: 83px;
+  }
+}
+
 .promo__wrapper {
   margin: 0 auto;
   min-width: 280px;
   padding: 0 20px;
+  height: 305px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 708px;
     padding: 0 30px;
+    position: relative;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
   }
 }

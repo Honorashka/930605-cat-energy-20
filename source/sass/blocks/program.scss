@@ -3,10 +3,12 @@
   min-width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-top: 197px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,19 +25,55 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 82px;
   }
 }
 
 .program__item {
   background-color: $basic_grey;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+  }
+}
+
+.program__title-wrapper {
+  width: 240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 21px;
+}
+
+.program__item-img {
+  width: 50px;
+  height: 53px;
+  margin-left: 20px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 220px;
+    height: 211px;
+    margin-top: -60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    width: 100px;
+    height: 106px;
+    margin-top: 41px;
+    margin-left: 52px;
   }
 }
 
@@ -44,10 +82,18 @@
   font-size: 24px;
   line-height: 37px;
   color: $basic_black;
+  margin: 0;
+  margin-left: 19px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
+    margin-left: 53px;
+    min-width: 250px;
+    padding-top: 77px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,10 +107,20 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  margin: 0 auto;
+  width: 240px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $special_grey-3;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    margin-left: 53px;
+    width: 377px;
+    border-bottom: none;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,10 +135,25 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic_black;
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    order: 3;
+    margin: 0;
+    margin-left: 53px;
+    margin-bottom: 53px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

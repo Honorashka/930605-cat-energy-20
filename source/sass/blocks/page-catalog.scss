@@ -11,4 +11,15 @@
   min-width: 280px;
   padding: 0 20px;
   border-bottom: 1px solid $basis_grey-2;
+  border-top: 1px solid $basis_grey-2;
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 65px;
+    padding-bottom: 83px;
+    border: none;
+  }
 }

@@ -1,11 +1,13 @@
 .page-footer__cooperation {
   background-color: $basic_white;
+  position: relative;
 }
 
 .page-footer__text-logo-wrapper {
   min-width: 280px;
   padding: 0 20px;
   padding-bottom: 32px;
+  padding-top: 39px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -52,6 +54,8 @@
     justify-content: space-between;
     min-width: 1220px;
     padding: 0 60px;
+    padding-top: 57px;
+    padding-bottom: 58px;
   }
 }
 

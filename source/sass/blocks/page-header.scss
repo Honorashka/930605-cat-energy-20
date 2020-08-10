@@ -1,12 +1,11 @@
 .page-header {
-  background-color: $basic_white;
-  border-bottom: 1px solid $special_grey-3;
-  margin: 0 auto;
-  min-width: 280px;
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    margin: 0 auto;
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -16,4 +15,31 @@
     width: 1220px;
     padding: 0 60px;
   }
+}
+
+.page-header__wrapper {
+  background-color: $basic_white;
+  margin: 0 auto;
+  min-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-width: 174px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   width: 708px;
+  //   padding: 0 30px;
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 1220px;
+  //   padding: 0 60px;
+  // }
 }
