@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic_green;
-    width: 478px;
+    min-width: 478px;
+    margin: 0 auto;
   }
 }
 
@@ -67,5 +67,16 @@
       opacity: 1;
       border-bottom: 2px solid $basic_white;
     }
+  }
+}
+
+.site-list__link--all {
+  @media (min-width: $tablet-width) {
+    color: $basic_black;
+  }
+
+  &:active {
+    opacity: 1;
+    border-bottom: 2px solid $basic_green;
   }
 }

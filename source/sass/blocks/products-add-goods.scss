@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
+    margin-bottom: 86px;
   }
 }
 
@@ -22,10 +23,14 @@
   color: $basic_black;
   padding-bottom: 35px;
   border-bottom: 1px solid $special_grey;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 81px;
+    padding-top: 49px;
+    border: none;
   }
 }
 

@@ -1,6 +1,6 @@
 .products__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   min-width: 280px;
   padding: 0 20px;
 
@@ -14,18 +14,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    width: 1220px;
     padding: 0 60px;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 63px;
-  }
-}
-
-.products {
-  @media (min-width: $desktop-width) {
-    min-width: 1220px;
-    padding: 0 60px;
   }
 }

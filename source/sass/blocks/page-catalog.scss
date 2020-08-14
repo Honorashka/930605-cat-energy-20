@@ -21,5 +21,14 @@
     padding-top: 65px;
     padding-bottom: 83px;
     border: none;
+    min-width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 1220px;
   }
 }

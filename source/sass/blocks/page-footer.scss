@@ -1,6 +1,10 @@
 .page-footer__cooperation {
   background-color: $basic_white;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_grey;
+  }
 }
 
 .page-footer__text-logo-wrapper {

@@ -1,9 +1,27 @@
+.main-form {
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .main-form__label {
   font-family: $font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__input {
@@ -12,6 +30,29 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  flex-grow: 1;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+  border: 1px solid $special_grey-5;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  // &:invalid {
+  //   border: 2px solid $special_pink;
+  // }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__radio-label {
@@ -20,6 +61,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__title {
@@ -28,12 +75,28 @@
   line-height: 26px;
   color: $basic_black;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .main-form__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 569px;
+  }
 }
 
 .main-form__list--add {
@@ -50,8 +113,19 @@
 }
 
 .main-form__textarea {
+  padding: 0;
+  margin: 0;
+  margin-top: 34px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 630px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
+    border: 1px solid $special_grey-5;
   }
 }
 
@@ -61,6 +135,15 @@
   line-height: 16px;
   color: $special_dark-grey;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__checkbox-label {
@@ -69,19 +152,39 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
+  padding-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__item {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     width: 568px;
   }
 }
 
+.main-form__item:last-child {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .main-form__item--add {
   @media (min-width: $tablet-width) {
     width: 221px;
+  }
+}
+
+.main-form__item--radio {
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
   }
 }
 
@@ -94,6 +197,16 @@
 .main-form__fieldset--program {
   border-top: 1px solid $special_grey-3;
   border-bottom: 1px solid $special_grey-3;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special_grey;
+    padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 25px;
+  }
 }
 
 .main-form__required {
@@ -101,6 +214,14 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
 }
 
 .main-form__wrapper--required {
@@ -108,6 +229,11 @@
     width: 565px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 830px;
+    margin-top: 61px;
   }
 }
 
@@ -122,5 +248,31 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-form__button {
+  width: 280px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+
+  &:hover {
+    background-color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
   }
 }

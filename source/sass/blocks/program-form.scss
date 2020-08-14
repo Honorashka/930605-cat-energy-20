@@ -3,6 +3,19 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic_black;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-form__text {
@@ -11,4 +24,19 @@
   line-height: 18px;
   color: $basic_black;
   text-transform: uppercase;
+  margin: 0;
+  width: 226px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    margin-bottom: 46px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
