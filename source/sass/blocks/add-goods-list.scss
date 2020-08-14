@@ -43,6 +43,12 @@
   }
 }
 
+.add-goods-list__item:last-child {
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .add-goods-list__title {
   font-family: $font;
   font-size: 16px;
