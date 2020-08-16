@@ -9,11 +9,13 @@
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
+    align-items: flex-start;
   }
 }
 
@@ -22,6 +24,8 @@
   margin: 0 auto;
   min-width: 280px;
   padding: 0 20px;
+  padding-top: 12px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -29,17 +33,10 @@
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
 
-  // @media (min-width: $tablet-width) {
-  //   width: 708px;
-  //   padding: 0 30px;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 1220px;
-  //   padding: 0 60px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
