@@ -1,14 +1,8 @@
 .nav__toggle {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: none;
     padding-top: 42px;
-  }
-}
-
-.nav__wrapper--index {
-  @media (min-width: $desktop-width) {
-    min-height: 696px;
-    min-width: 720px;
-    background-color: $basic_green;
   }
 }

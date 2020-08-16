@@ -56,11 +56,6 @@
 }
 
 .program__item-img {
-  width: 50px;
-  height: 53px;
-  margin-left: 20px;
-  padding-top: 24px;
-
   @media (min-width: $tablet-width) {
     order: 1;
     width: 220px;
@@ -78,6 +73,73 @@
   }
 }
 
+.program__item-img-slim {
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 192px;
+    top: -15px;
+    left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: -5px;
+    left: 15px;
+  }
+}
+
+.program__item-img-pro {
+  max-width: none;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 30px;
+    left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 20px;
+    left: -20px;
+  }
+}
+
+.program__item-img-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: $basic_green;
+  border-radius: 50%;
+  margin-left: 29px;
+  margin-top: 21px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    margin-top: -40px;
+    margin-left: 18px;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    order: 0;
+    margin-top: 41px;
+    margin-left: 52px;
+  }
+}
+
 .program__title {
   font-family: $font;
   font-size: 24px;
@@ -86,6 +148,7 @@
   margin: 0;
   margin-left: 19px;
   padding-top: 30px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -114,6 +177,10 @@
   padding-bottom: 23px;
   border-bottom: 1px solid $special_grey-3;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -122,11 +189,19 @@
     width: 377px;
     border-bottom: none;
     padding-top: 0;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+
+    br {
+      display: none;
+    }
   }
 }
 
