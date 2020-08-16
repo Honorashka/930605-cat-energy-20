@@ -6,19 +6,3 @@
     padding-top: 42px;
   }
 }
-
-.nav__wrapper--index {
-  @media (min-width: $desktop-width) {
-    min-height: 696px;
-    min-width: 720px;
-    background-color: $basic_green;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-    }
-  }
-}

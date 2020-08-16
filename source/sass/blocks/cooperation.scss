@@ -35,7 +35,8 @@
   line-height: 18px;
   color: $special_black;
   margin: 0;
-  padding-right: 20px;
+  width: 140px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -58,7 +59,6 @@
   line-height: 20px;
   color: $special_dark-grey;
   margin: 0;
-  width: 170px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -83,6 +83,8 @@
 }
 
 .cooperation__text-wrapper {
+  width: 140px;
+
   @media (min-width: $tablet-width) {
     width: 200px;
   }
