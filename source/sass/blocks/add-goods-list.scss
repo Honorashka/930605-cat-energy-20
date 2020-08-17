@@ -47,6 +47,10 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .add-goods-list__title {
@@ -67,6 +71,8 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     border: none;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
