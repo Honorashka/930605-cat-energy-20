@@ -211,12 +211,15 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic_black;
-  display: block;
-  width: 240px;
-  margin: 0 auto;
+  width: 134px;
+  margin: 0;
+  margin-left: 20px;
   padding-top: 15px;
   padding-bottom: 18px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &:active {
     opacity: 0.3;
@@ -230,6 +233,7 @@
     margin-left: 53px;
     margin-bottom: 53px;
     padding: 0;
+    width: 168px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,30 @@
-.logo-html-academy__text {
+.logo-html-academy__link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+  }
+}
+
+.logo-html-academy__img {
+  fill: $special_grey_2;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
