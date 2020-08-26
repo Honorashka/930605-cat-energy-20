@@ -5,7 +5,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 708px;
     padding: 0 30px;
     display: grid;
     grid-template-columns: 324px 324px;

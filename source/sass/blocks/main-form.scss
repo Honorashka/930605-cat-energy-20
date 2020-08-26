@@ -44,23 +44,23 @@
   &:focus {
     border: 2px solid $special_dark-grey;
 
-    &:focus .main-form__input-svg {
+    + .main-form__input-svg {
       fill: $basic_green;
+    }
+  &:invalid {
+    border: 2px solid $special_error;
+
+    + .main-form__input-svg {
+      fill: $special_error;
     }
   }
 
-  // &:invalid {
-  //   border: 2px solid $special_pink;
-  // }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.main-form__radio {
-  display: none;
 }
 
 .main-form__radio-label {
@@ -77,11 +77,11 @@
     line-height: 30px;
     padding-left: 60px;
   }
-}
 
-// .main-form__radio-label:checked + label::before {
-//   display: block;
-// }
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .main-form__radio-label::before {
   position: absolute;
@@ -126,6 +126,8 @@
   color: $basic_black;
   padding-top: 26px;
   position: relative;
+  background-color: $basic_white;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 56px;
@@ -137,23 +139,16 @@
   }
 }
 
-// .main-form__title::before {
-//   position: absolute;
-//   content: "";
-//   width: 100vw;
-//   height: 3px;
-//   background-color: $basic_green;
-//   // z-index: -1;
-// }
-
-// .main-form__title::after {
-//   position: absolute;
-//   content: "";
-//   width: 100vw;
-//   height: 3px;
-//   background-color: $basic_green;
-//   // z-index: -1;
-// }
+.main-form__title::after {
+  position: absolute;
+  content: "";
+  left: calc(50% - 50vw);
+  top: 39px;
+  width: 100vw;
+  height: 3px;
+  background-color: $basic_green;
+  z-index: -1;
+}
 
 .main-form__list {
   list-style: none;
@@ -215,10 +210,6 @@
   }
 }
 
-.main-form__checkbox {
-  display: none;
-}
-
 .main-form__checkbox-label {
   font-family: $font;
   font-size: 16px;
@@ -231,6 +222,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -248,7 +243,7 @@
   }
 }
 
-.main-form__checkbox:checked + label::after {
+.main-form__checkbox:checked + .main-form__checkbox-label::after {
   position: absolute;
   content: "";
   background-image: url("../img/icon-tick.svg");
@@ -407,7 +402,7 @@
   }
 }
 
-.main-form__list--item {
+.main-form__item--email {
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }

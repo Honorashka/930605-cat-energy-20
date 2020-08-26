@@ -10,6 +10,18 @@
 
   &:active {
     opacity: 0.3;
+
+    .logo-html-academy__img {
+      opacity: 0.3;
+      fill: $basic_green;
+    }
+  }
+
+  &:hover {
+
+    .logo-html-academy__img {
+      fill: $basic_green;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -19,12 +31,4 @@
 
 .logo-html-academy__img {
   fill: $special_grey_2;
-
-  &:hover {
-    fill: $basic_green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

@@ -89,15 +89,15 @@
           <fieldset class="main-form__fieldset main-form__fieldset--program">
             <ul class="main-form__list">
               <li class="main-form__item main-form__item--radio">
-                <input class="main-form__radio" id="slimming" type="radio" checked name="program-selection" value="slimming">
+                <input class="main-form__radio visually-hidden" id="slimming" type="radio" checked name="program-selection" value="slimming">
                 <label class="main-form__radio-label" for="slimming" tabindex="0">Похудение</label>
               </li>
               <li class="main-form__item main-form__item--radio">
-                <input class="main-form__radio" id="weight-gain" type="radio" name="program-selection" value="weight-gain">
+                <input class="main-form__radio visually-hidden" id="weight-gain" type="radio" name="program-selection" value="weight-gain">
                 <label class="main-form__radio-label" for="weight-gain" tabindex="0">Набор массы</label>
               </li>
               <li class="main-form__item main-form__item--radio">
-                <input class="main-form__radio" id="other" type="radio" name="program-selection" value="other">
+                <input class="main-form__radio visually-hidden" id="other" type="radio" name="program-selection" value="other">
                 <label class="main-form__radio-label" for="other" tabindex="0">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -106,7 +106,7 @@
         <fieldset class="main-form__fieldset">
           <legend class="main-form__title">Контактные данные (владельца кота)</legend>
           <ul class="main-form__list main-form__list--contact">
-            <li class="main-form__item main-form__list--item">
+            <li class="main-form__item main-form__item--email">
               <label class="main-form__label" for="email">E-mail:*</label>
               <input class="main-form__input" id="email" name="email" type="email" placeholder="KUKLACHEV@GMAIL.COM">
               <svg class="main-form__input-svg main-form__input-svg--mail" width="17" height="13">
@@ -115,7 +115,7 @@
             </li>
             <li class="main-form__item">
               <label class="main-form__label" for="phone">Телефон:*</label>
-              <input class="main-form__input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+              <input class="main-form__input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               <svg class="main-form__input-svg main-form__input-svg--phone" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -133,22 +133,22 @@
           <ul class="main-form__list main-form__list--add">
             <li class="main-form__item
             main-form__item--add">
-              <input class="main-form__checkbox" id="sugaroff" type="checkbox" checked name="sugaroff">
+              <input class="main-form__checkbox visually-hidden" id="sugaroff" type="checkbox" checked name="sugaroff">
               <label class="main-form__checkbox-label" for="sugaroff" tabindex="0">Сахарозаменитель</label>
             </li>
             <li class="main-form__item
             main-form__item--add">
-              <input class="main-form__checkbox" id="water" type="checkbox" name="water">
+              <input class="main-form__checkbox visually-hidden" id="water" type="checkbox" name="water">
               <label class="main-form__checkbox-label" for="water" tabindex="0">Питьева вода</label>
             </li>
             <li class="main-form__item
             main-form__item--add">
-              <input class="main-form__checkbox" id="milk" type="checkbox" name="milk">
+              <input class="main-form__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
               <label class="main-form__checkbox-label" for="milk" tabindex="0">Молоко</label>
             </li>
             <li class="main-form__item
             main-form__item--add">
-              <input class="main-form__checkbox" id="vitamines" type="checkbox" name="vitamines">
+              <input class="main-form__checkbox visually-hidden" id="vitamines" type="checkbox" name="vitamines">
               <label class="main-form__checkbox-label" for="vitamines" tabindex="0">Витамины</label>
             </li>
           </ul>

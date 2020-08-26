@@ -57,7 +57,7 @@
   }
 }
 
-.advantages__item--1 {
+.advantages__item:nth-child(1) {
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-number-1@1x.png");
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
   }
 }
 
-.advantages__item--2 {
+.advantages__item:nth-child(2) {
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-number-2@1x.png");
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@
   }
 }
 
-.advantages__item--3 {
+.advantages__item:nth-child(3) {
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-number-3@1x.png");
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   }
 }
 
-.advantages__item--4 {
+.advantages__item:nth-child(4) {
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-number-4@1x.png");
     background-repeat: no-repeat;

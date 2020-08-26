@@ -122,4 +122,12 @@
   @media (min-width: $desktop-width) {
     width: 244px;
   }
+
+  &:hover {
+    background-color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
