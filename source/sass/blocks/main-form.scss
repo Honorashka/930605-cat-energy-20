@@ -47,14 +47,14 @@
     + .main-form__input-svg {
       fill: $basic_green;
     }
-  &:invalid {
-    border: 2px solid $special_error;
 
-    + .main-form__input-svg {
-      fill: $special_error;
+    &:invalid {
+      border: 2px solid $special_error;
+
+      + .main-form__input-svg {
+        fill: $special_error;
+      }
     }
-  }
-
   }
 
   @media (min-width: $desktop-width) {
