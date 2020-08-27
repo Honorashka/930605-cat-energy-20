@@ -1,6 +1,14 @@
 .page-footer__cooperation {
   background-color: $basic_white;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_white;
+  }
 }
 
 .page-footer__text-logo-wrapper {
@@ -81,6 +89,14 @@
 
 .page-footer__social-link-svg {
   fill: $special_grey-2;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social-link-svg--vk {
@@ -101,5 +117,15 @@
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
+  }
+}
+
+.page-footer__text-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

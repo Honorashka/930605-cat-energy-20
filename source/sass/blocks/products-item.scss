@@ -81,6 +81,14 @@
   @media (min-width: $desktop-width) {
     width: 168px;
   }
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .products-item__table {
@@ -100,5 +108,12 @@
     padding-bottom: 9px;
     padding-top: 7px;
     border-bottom: 1px solid $special_grey;
+  }
+}
+
+.products-item--add {
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+    border: 2px solid $special_grey;
   }
 }

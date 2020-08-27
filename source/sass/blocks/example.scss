@@ -266,12 +266,17 @@
   border: none;
   background: none;
   width: 50px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $special_grey-6;
     padding: 0;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $special_grey-6;
   }
 }
 
