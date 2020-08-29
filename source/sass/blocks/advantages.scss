@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
-    padding-bottom: 212px;
+    padding-bottom: 199px;
   }
 }
 
@@ -25,7 +25,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding-right: 4px;
   }
 }
 
@@ -83,6 +87,8 @@
 
 .advantages__item:nth-child(3) {
   @media (min-width: $tablet-width) {
+    margin-right: 153px;
+    margin-top: 70px;
     background-image: url("../img/bg-number-3@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
@@ -91,10 +97,16 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-number-3@2x.png");
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 .advantages__item:nth-child(4) {
   @media (min-width: $tablet-width) {
+    margin-top: 70px;
     background-image: url("../img/bg-number-4@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
@@ -103,13 +115,19 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-number-4@2x.png");
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 .advantages__item-img {
   min-height: 30px;
   display: block;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 4px;
+  width: 50px;
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
@@ -123,16 +141,20 @@
   color: $basic_black;
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 17px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 43px;
+    padding-bottom: 53px;
   }
 }
 
@@ -150,6 +172,7 @@
     margin: 0;
     padding-bottom: 63px;
     margin-top: 31px;
+    width: 250px;
   }
 
   @media (min-width: $desktop-width) {

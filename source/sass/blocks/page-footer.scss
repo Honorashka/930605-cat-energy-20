@@ -14,13 +14,17 @@
 .page-footer__text-logo-wrapper {
   min-width: 280px;
   padding: 0 20px;
-  padding-bottom: 32px;
-  padding-top: 39px;
+  padding-bottom: 28px;
+  padding-top: 37px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     min-width: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 49px;
   }
 }
 
@@ -33,11 +37,13 @@
   min-width: 280px;
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
     min-width: 130px;
+    margin-left: 25px;
   }
 }
 
@@ -58,6 +64,7 @@
     padding: 0 30px;
     padding-top: 55px;
     padding-bottom: 61px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +83,7 @@
   align-items: center;
   min-width: 280px;
   padding: 0 20px;
-  padding-top: 28px;
+  padding-top: 22px;
   padding-bottom: 22px;
   color: $special_dark-grey;
 
@@ -84,6 +91,10 @@
     padding: 0;
     min-width: 163px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
   }
 }
 
