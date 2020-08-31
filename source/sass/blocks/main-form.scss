@@ -139,11 +139,15 @@
   background-color: $basic_white;
   z-index: 1;
   padding-right: 22px;
+  margin-left: -10px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 56px;
     font-size: 36px;
     line-height: 36px;
+    margin-left: -20px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,7 +160,7 @@
 .main-form__fieldset::after {
   position: absolute;
   content: "";
-  left: calc(50% - 50vw);
+  left: calc(47% - 48vw);
   top: 36px;
   width: 100vw;
   height: 3px;
@@ -499,7 +503,7 @@
 }
 
 .main-form__title--contants {
-  width: 203px;
+  width: 215px;
 
   @media (min-width: $tablet-width) {
     width: auto;
