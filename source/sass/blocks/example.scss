@@ -264,14 +264,13 @@
 }
 
 .example__slider-wrapper {
-
   @media (min-width: $desktop-width) {
     padding-left: 140px;
   }
 }
 
 .example__weight-loss-img {
-    height: 232px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
     max-width: none;
@@ -279,7 +278,6 @@
     height: 517px;
   }
 }
-
 
 .example__slider-text {
   font-family: $font;

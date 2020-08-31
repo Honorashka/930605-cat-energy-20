@@ -5,7 +5,7 @@
   border-bottom: 1px solid $basis_grey-2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding-top: 44px;
     border: none;
   }
 }
@@ -46,7 +46,7 @@
     line-height: 18px;
     max-width: 167px;
     margin: 0 auto;
-    margin-bottom: 73px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +84,7 @@
 
 .products-additional__svg {
   fill: $special_plus-grey;
-  padding-bottom: 23px;
+  padding-bottom: 16px;
 }
 
 .products-additional__svg--mobile {
