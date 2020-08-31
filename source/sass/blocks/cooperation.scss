@@ -4,7 +4,7 @@
   margin: 0 auto;
   min-width: 280px;
   padding: 0 20px;
-  padding-top: 29px;
+  // padding-top: 47px;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
@@ -37,6 +37,7 @@
   margin: 0;
   width: 140px;
   text-transform: uppercase;
+  font-weight: normal;
 
 
   @media (min-width: $tablet-width) {

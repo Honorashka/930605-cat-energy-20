@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
-    padding-bottom: 199px;
+    padding-bottom: 155px;
   }
 }
 
@@ -25,9 +25,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-right: 4px;
+    padding-bottom: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
     padding-right: 4px;
   }
@@ -44,6 +47,7 @@
     width: 230px;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,10 +70,11 @@
     background-image: url("../img/bg-number-1@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-number-1@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-number-1@2x.png");
+      background-size: 71px 227px;
+    }
   }
 }
 
@@ -78,10 +83,11 @@
     background-image: url("../img/bg-number-2@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-number-2@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-number-2@2x.png");
+      background-size: 113px 229px;
+    }
   }
 }
 
@@ -92,15 +98,16 @@
     background-image: url("../img/bg-number-3@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-number-3@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-number-3@2x.png");
+      background-size: 112px 232px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -110,15 +117,16 @@
     background-image: url("../img/bg-number-4@1x.png");
     background-repeat: no-repeat;
     background-position: 118px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-number-4@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-number-4@2x.png");
+      background-size: 121px 227px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -142,6 +150,7 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 21px;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -154,7 +163,7 @@
     font-size: 60px;
     line-height: 60px;
     padding-top: 43px;
-    padding-bottom: 53px;
+    padding-bottom: 26px;
   }
 }
 

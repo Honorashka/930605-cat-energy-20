@@ -1,11 +1,9 @@
 .page-footer__cooperation {
-  background-color: $basic_white;
+  background-color: $basic_grey;
   position: relative;
-  padding-top: 17px;
-  // 35
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic_grey;
     padding-top: 0;
   }
 
