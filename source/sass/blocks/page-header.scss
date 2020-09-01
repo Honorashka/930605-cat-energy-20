@@ -44,7 +44,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     min-width: 174px;
-    padding-top: 24px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -57,7 +57,11 @@
 
 .page-header__logo-img {
   @media (min-width: $tablet-width) {
-    width: 196px;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 203px;
   }
 
   &:hover {

@@ -27,6 +27,11 @@
     border-top: none;
     margin-right: 34px;
     padding: 0;
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
