@@ -2,8 +2,7 @@
   background-color: $basic_green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -15,79 +14,94 @@
 
     @media (min-width: $desktop-width) {
       position: relative;
+      background-color: none;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: right 50%;
+      min-height: 696px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
+}
 
-  .promo__program {
-    display: block;
-    margin-top: 3px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    min-width: 280px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 18px;
+.promo__program {
+  display: block;
+  margin-top: 3px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  min-width: 280px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
 
-    &:hover {
-      background-color: $basic_green-2;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 250px;
-      left: 83px;
-      min-width: 244px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      font-size: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 138px;
-      top: 265px;
-    }
+  &:hover {
+    background-color: $basic_green-2;
   }
 
-  .promo__wrapper {
-    margin: 0 auto;
-    min-width: 280px;
-    padding: 0 20px;
-    height: 305px;
-
-    @media (min-width: $tablet-width) {
-      width: 708px;
-      padding: 0 30px;
-      position: relative;
-      height: auto;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 1220px;
-      padding: 0 60px;
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      bottom: 430px;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
-  .promo__img {
-    display: block;
-    margin: auto;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 277px;
+    left: 111px;
+    min-width: 244px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+  }
 
-    @media (min-width: $tablet-width) {
-      width: 709px;
-      height: 609px;
-    }
+  @media (min-width: $desktop-width) {
+    position: initial;
+    width: 244px;
+    margin-left: 81px;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      position: absolute;
-      top: 12px;
-      right: 183px;
-    }
+.promo__wrapper {
+  margin: 0 auto;
+  min-width: 280px;
+  padding: 0 20px;
+  height: 305px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    position: relative;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.promo__img {
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: 0;
+    width: 552px;
+    height: 499px;
+    left: 50%;
+    margin-left: -163px;
+    margin-top: -318px;
   }
 }

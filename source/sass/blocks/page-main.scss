@@ -4,9 +4,10 @@
   line-height: 36px;
   color: $basic_white;
   margin: 0;
-  padding-top: 27px;
   padding-bottom: 25px;
   text-align: center;
+  padding-top: 25px;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     color: $basic_black;
@@ -15,13 +16,16 @@
     text-align: left;
     padding-left: 89px;
     width: 516px;
+    padding-top: 60px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     color: $basic_black;
     font-size: 60px;
     line-height: 60px;
-    padding-left: 80px;
+    padding-left: 79px;
+    padding-top: 223px;
   }
 }
 
@@ -45,13 +49,10 @@
 
   @media (min-width: $desktop-width) {
     color: $basic_black;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
-    order: 4;
-    position: absolute;
-    top: 155px;
     padding-left: 80px;
-    margin-top: 40px;
     margin-bottom: 52px;
     padding-bottom: 0;
   }

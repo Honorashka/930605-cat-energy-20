@@ -1,15 +1,21 @@
 .products-item {
-  margin-bottom: 19px;
+  margin-bottom: 25px;
   border-top: 1px solid $basis_grey-2;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 11px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     border: none;
     background-color: $basic_grey;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }
 
@@ -24,6 +30,8 @@
   color: $special_dark-grey-2;
   margin: 0;
   width: 76px;
+  text-transform: uppercase;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -31,6 +39,7 @@
     min-width: 157px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,8 +68,8 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 208px;
-    margin-top: -73px;
-    margin-bottom: 34px;
+    margin-top: -106px;
+    margin-bottom: 30px;
   }
 }
 
@@ -71,11 +80,12 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: -8px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin-top: 13px;
-    margin-bottom: 40px;
+    margin-top: 28px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,6 +102,10 @@
 }
 
 .products-item__table {
+  width: 140px;
+  margin-top: 10px;
+  margin-left: -3px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
@@ -102,10 +116,13 @@
 }
 
 .products-item__row {
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
     padding-top: 7px;
     border-bottom: 1px solid $special_grey;
   }
@@ -115,5 +132,31 @@
   @media (min-width: $tablet-width) {
     background-color: $basic_white;
     border: 2px solid $special_grey;
+  }
+}
+
+.products-item__img-link {
+  padding-top: 3px;
+}
+
+.products-item__info {
+  @media (min-width: $tablet-width) {
+    margin-top: -12px;
+  }
+}
+
+
+.products-item__img-cards--small {
+  @media (min-width: $tablet-width) {
+    height: 172px;
+    padding-top: 45px;
+  }
+}
+
+.products-item__img-cards--big {
+  @media (min-width: $tablet-width) {
+    height: 211px;
+    padding-top: 18px;
+    margin-bottom: 18px;
   }
 }

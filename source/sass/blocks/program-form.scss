@@ -1,3 +1,7 @@
+.program-form {
+  padding-bottom: 18px;
+}
+
 .program-form__title {
   font-family: $font;
   font-size: 36px;
@@ -6,15 +10,17 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 37px;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 56px;
     padding-bottom: 54px;
-  }
-
-  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 191px;
   }
 }
 
@@ -26,11 +32,11 @@
   text-transform: uppercase;
   margin: 0;
   width: 226px;
-  margin-bottom: 39px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
-    margin-bottom: 46px;
+    margin-bottom: 29px;
     font-size: 20px;
     line-height: 30px;
     width: 323px;
@@ -38,5 +44,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    margin-bottom: 64px;
   }
 }
