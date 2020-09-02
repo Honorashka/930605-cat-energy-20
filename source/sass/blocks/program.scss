@@ -174,9 +174,11 @@
   line-height: 18px;
   color: $special_dark-grey;
   margin: 0 auto;
-  width: 240px;
+  min-width: 240px;
   padding-top: 22px;
   padding-bottom: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-bottom: 1px solid $special_grey-3;
 
   br {
@@ -191,6 +193,8 @@
     width: 377px;
     border-bottom: none;
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 
 
     br {

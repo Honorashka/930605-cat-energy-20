@@ -132,4 +132,9 @@
 
 .cooperation__iframe {
   margin-bottom: -5px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
