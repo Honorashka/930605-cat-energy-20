@@ -120,7 +120,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -134,8 +134,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("build/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("build/*.html").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
