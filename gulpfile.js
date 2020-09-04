@@ -25,21 +25,16 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
-
 //JSmin
 
-const jsmin = require ("gulp-jsmin");
+const jsmin = require("gulp-jsmin");
 
 const jsminify = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src("source/js/*.js")
   .pipe(jsmin())
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest("build/js"))
 }
-
-exports.jsminify = jsminify;
-
 
 //Imagemin
 
@@ -54,8 +49,6 @@ const images = () => {
     ]))
 }
 
-exports.images = images;
-
 //WebP
 
 const webp = require("gulp-webp");
@@ -65,8 +58,6 @@ const webpimg = () => {
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
-
-exports.webpimg = webpimg;
 
 
 //SvgStore
@@ -80,8 +71,6 @@ const sprite = () => {
     .pipe(gulp.dest("build/img"))
 
 }
-
-exports.sprite = sprite;
 
 
 //Del
@@ -107,13 +96,9 @@ const copy = () => {
     .pipe(gulp.dest("build"));
 };
 
-exports.copy = copy;
-
 //Build
 
 const build = gulp.series(clean, copy, styles, jsminify, images, webpimg, sprite);
-
-exports.build = build;
 
 // Server
 
