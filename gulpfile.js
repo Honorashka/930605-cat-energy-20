@@ -8,6 +8,7 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 
+
 // Styles
 
 const styles = () => {
@@ -31,9 +32,9 @@ const jsmin = require("gulp-jsmin");
 
 const jsminify = () => {
   return gulp.src("source/js/*.js")
-  .pipe(jsmin())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest("build/js"))
+    .pipe(jsmin())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("build/js"))
 }
 
 //Imagemin
@@ -100,12 +101,14 @@ const copy = () => {
 
 const build = gulp.series(clean, copy, styles, jsminify, images, webpimg, sprite);
 
+exports.build = build;
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -119,10 +122,11 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
   styles, server, watcher
 );
+
