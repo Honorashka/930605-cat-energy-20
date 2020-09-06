@@ -37,6 +37,17 @@ const jsminify = () => {
     .pipe(gulp.dest("build/js"))
 }
 
+//Htmlmin
+
+const htmlmin = require("gulp-htmlmin");
+
+const minify = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true}))
+    .pipe(gulp.dest("build"))
+}
+
+
 //Imagemin
 
 const imagemin = require("gulp-imagemin");
@@ -74,6 +85,7 @@ const sprite = () => {
 }
 
 
+
 //Del
 
 const del = require("del");
@@ -88,7 +100,6 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico",
     "source/*.html"
   ], {
@@ -99,7 +110,7 @@ const copy = () => {
 
 //Build
 
-const build = gulp.series(clean, copy, styles, jsminify, images, webpimg, sprite);
+const build = gulp.series(clean, copy, styles, jsminify, minify, images, webpimg, sprite);
 
 exports.build = build;
 
@@ -129,4 +140,3 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
-
