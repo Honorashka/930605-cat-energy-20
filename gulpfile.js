@@ -38,11 +38,13 @@ const jsminify = () => {
 }
 
 //Htmlmin
-
 const htmlmin = require("gulp-htmlmin");
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 const minify = () => {
   return gulp.src("source/*.html")
+    .pipe(posthtml([include()]))
     .pipe(htmlmin({ collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 }
@@ -85,7 +87,6 @@ const sprite = () => {
 }
 
 
-
 //Del
 
 const del = require("del");
@@ -107,6 +108,7 @@ const copy = () => {
   })
     .pipe(gulp.dest("build"));
 };
+
 
 //Build
 
