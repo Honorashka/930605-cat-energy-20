@@ -51,3 +51,22 @@
     padding-top: 42px;
   }
 }
+
+.nav--nojs .nav__toogle {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav--nojs .nav__wrapper {
+  @media (max-width: $tablet-width) {
+    position: static;
+    min-height: 0;
+  }
+}
+
+.nav--nojs .site-list__item {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}

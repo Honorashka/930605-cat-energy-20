@@ -7,13 +7,13 @@
     width: 440px;
     display: flex;
     justify-content: space-between;
-    padding-top: 18px;
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 478px;
     margin: 0 auto;
-    padding-top: 58px;
+    padding-top: 55px;
   }
 }
 
@@ -70,6 +70,8 @@
 
   @media (min-width: $desktop-width) {
     color: $basic_white;
+    font-size: 20px;
+    line-height: 30px;
 
     &:active {
       opacity: 1;

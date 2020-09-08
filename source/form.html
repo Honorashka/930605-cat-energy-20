@@ -12,7 +12,7 @@
 
 <body>
   <div style="display: none;">
-    <include src="img/sprite.svg"></include>
+    <include src="source/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
@@ -25,7 +25,7 @@
               alt="Логотип Cat Energy">
           </picture>
           <svg class="page-header__logo-svg" width="34" height="38" aria-label="Логотип CatEnergy">
-            <use xlink:href="img/sprite.svg#icon-logo-catenergy"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-mobile"></use>
           </svg>
           <svg class="page-header__logo-text" width="101" height="18" aria-label="Текст логотипа CatEnergy">
             <use xlink:href="img/sprite.svg#icon-logo-text"></use>
@@ -55,7 +55,7 @@
   <main class="page-form">
     <section class="program-form">
       <h1 class="program-form__title">Подбор программы</h1>
-      <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="program-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="main-form" method="post" action="https://echo.htmlacademy.ru" aria-label="Подбор программы">
         <div class="main-form__wrapper">
           <ul class="main-form__list">
@@ -73,7 +73,7 @@
             </li>
           </ul>
           <fieldset class="main-form__fieldset main-form__fieldset--program main-form__fieldset--border">
-            <ul class="main-form__list">
+            <ul class="main-form__list main-form__list--radio">
               <li class="main-form__item main-form__item--radio">
                 <input class="main-form__radio visually-hidden" id="slimming" type="radio" checked name="program-selection" value="slimming">
                 <label class="main-form__radio-label" for="slimming" tabindex="0">Похудение</label>
@@ -99,8 +99,8 @@
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </li>
-            <li class="main-form__item">
-              <label class="main-form__label" for="phone">Телефон:*</label>
+            <li class="main-form__item main-form__item--phone">
+              <label class="main-form__label main-form__label--phone" for="phone">Телефон:*</label>
               <input class="main-form__input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               <svg class="main-form__input-svg main-form__input-svg--phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -157,7 +157,7 @@
         </div>
       </div>
       <div class="cooperation__map" aria-label="Карта местонахождения офиса">
-        <iframe class="cooperation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598912845434!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="cooperation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598912845434!5m2!1sru!2sru" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
     <div class="page-footer__link-wrapper">
@@ -166,8 +166,8 @@
           <img class="footer-logo__text-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </div>
-      <ul class="page-footer__list">
-        <div class="page-footer__item-wrapper">
+      <div class="page-footer__list-wrapper">
+        <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="page-footer__social-link" href="#">
               <svg class="page-footer__social-link-svg page-footer__social-link-svg--vk" width="23" height="16" aria-label="Вконтакте">
@@ -189,8 +189,8 @@
               </svg>
             </a>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
       <div class="page-footer__logo-html logo-html-academy">
         <a class="logo-html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="logo-html-academy__text">HTML Academy</span>

@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     border-top: 1px solid $special_grey-4;
     position: relative;
-    background: linear-gradient(to bottom, $basic_white 660px, $basic_grey-3 462px);
+    background: linear-gradient(to bottom, $basic_white 620px, $basic_grey-3 462px);
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +82,7 @@
     font-size: 60px;
     line-height: 60px;
     padding-top: 85px;
-    padding-bottom: 63px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,7 +112,7 @@
 
   @media (min-width: $desktop-width) {
     width: 439px;
-    padding-top: 113px;
+    padding-top: 116px;
   }
 }
 
@@ -234,8 +234,9 @@
 
 .example__weight-loss-before {
   @media (min-width: $tablet-width) {
-    width: 354px;
+    width: 348px;
     overflow: hidden;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -260,14 +261,14 @@
     width: 656px;
     background-color: transparent;
     padding-bottom: 0;
-    margin-left: 27px;
-    margin-top: 28px;
+    margin-left: 40px;
+    margin-top: 32px;
   }
 }
 
 .example__slider-wrapper {
   @media (min-width: $desktop-width) {
-    padding-left: 140px;
+    padding-left: 126px;
   }
 }
 

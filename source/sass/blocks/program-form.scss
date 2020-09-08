@@ -13,7 +13,7 @@
   font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 64px;
     padding-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
@@ -44,6 +44,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    margin-bottom: 64px;
+    margin-bottom: 58px;
   }
 }

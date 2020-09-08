@@ -4,13 +4,12 @@
   margin: 0 auto;
   min-width: 280px;
   padding: 0 20px;
-  // padding-top: 47px;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
-    padding-top: 66px;
+    padding-top: 65px;
     padding-bottom: 58px;
   }
 
@@ -24,8 +23,8 @@
     padding: 0;
     top: 95px;
     left: 110px;
-    padding-top: 60px;
-    padding-bottom: 56px;
+    padding-top: 64px;
+    padding-bottom: 63px;
   }
 }
 
@@ -49,10 +48,10 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     margin: 0;
     max-width: 163px;
-    padding-left: 28px;
+    padding-left: 32px;
   }
 }
 
@@ -104,7 +103,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 365px;
+  min-height: 362px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -131,6 +130,7 @@
 }
 
 .cooperation__iframe {
+  width: 100%;
   margin-bottom: -5px;
   height: 362px;
 

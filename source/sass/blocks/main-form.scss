@@ -2,7 +2,7 @@
   @media (min-width: $tablet-width) {
     width: 630px;
     margin: 0 auto;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +35,7 @@
   flex-grow: 1;
   padding-top: 13px;
   padding-bottom: 13px;
-  padding-left: 14px;
+  padding-left: 11px;
   border: 1px solid $special_grey-5;
   outline: none;
 
@@ -44,14 +44,14 @@
   }
 
   &:focus {
-    border: 2px solid $special_dark-grey;
+    outline: 2px solid $special_dark-grey;
 
     + .main-form__input-svg {
       fill: $basic_green;
     }
 
     &:invalid {
-      border: 2px solid $special_error;
+      outline: 2px solid $special_error;
 
       + .main-form__input-svg {
         fill: $special_error;
@@ -60,9 +60,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,7 +136,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
-  padding-top: 23px;
+  padding-top: 28px;
   position: relative;
   background-color: $basic_white;
   z-index: 1;
@@ -161,13 +163,13 @@
   position: absolute;
   content: "";
   left: calc(47% - 48vw);
-  top: 36px;
+  top: 41px;
   width: 100vw;
   height: 3px;
   background-color: $basic_green;
 
   @media (min-width: $tablet-width) {
-    top: 43px;
+    top: 47px;
   }
 }
 
@@ -179,13 +181,17 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 9px;
 
   @media (min-width: $desktop-width) {
     padding: 0;
     width: 569px;
   }
+}
+
+.main-form__list--radio {
+  padding-bottom: 3px;
 }
 
 .main-form__list--add {
@@ -200,6 +206,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     justify-content: flex-start;
+    padding-bottom: 6px;
   }
 }
 
@@ -211,15 +218,16 @@
   resize: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
+    margin-top: 14px;
     height: 173px;
     width: 630px;
-    margin-bottom: 39px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     border: 1px solid $special_grey-5;
+    margin-bottom: 39px;
   }
 }
 
@@ -246,7 +254,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
-  padding-left: 44px;
+  padding-left: 45px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -299,7 +307,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 11px;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -317,14 +325,14 @@
 
 .main-form__item--add {
   margin-bottom: 24px;
-  margin-top: 14px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     width: 221px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 105px;
+    padding-right: 104px;
   }
 }
 
@@ -337,7 +345,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 24px;
+    margin-top: 17px;
     padding-right: 0;
   }
 }
@@ -348,15 +356,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 24px;
+    margin-top: 8px;
   }
 }
 
 .main-form__item--radio {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding-top: 2px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -378,7 +387,8 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $special_grey;
     padding-left: 28px;
-    margin-top: 45px;
+    margin-top: 48px;
+    padding-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -431,6 +441,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 41px;
   }
 }
 
@@ -505,6 +516,12 @@
   }
 }
 
+.main-form__item--phone {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .main-form__title--contants {
   width: 215px;
 
@@ -516,6 +533,12 @@
 
 .main-form__title--add {
   @media (min-width: $tablet-width) {
-    padding-bottom: 37px;
+    padding-bottom: 40px;
+  }
+}
+
+.main-form__label--phone {
+  @media (min-width: $desktop-width) {
+    margin-left: -6px;
   }
 }
