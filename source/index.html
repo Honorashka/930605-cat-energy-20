@@ -12,7 +12,7 @@
 
 <body>
   <div style="display: none;">
-    <include src="img/sprite.svg"></include>
+    <include src="source/img/sprite.svg"></include>
   </div>
 
   <header class="page-header page-header--index">
@@ -25,7 +25,7 @@
               alt="Логотип Cat Energy">
           </picture>
           <svg class="page-header__logo-svg" width="34" height="38" aria-label="Логотип CatEnergy">
-            <use xlink:href="img/sprite.svg#icon-logo-catenergy"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-mobile"></use>
           </svg>
           <svg class="page-header__logo-text" width="101" height="18" aria-label="Текст логотипа CatEnergy">
             <use xlink:href="img/sprite.svg#icon-logo-text"></use>
@@ -68,6 +68,7 @@
             height="270" alt="Корм Cat Energy со вкусом курицы">
         </picture>
         <a class="promo__program button" href="form.html">Подобрать программу</a>
+        </div>
     </section>
     <section class="program">
       <ul class="program__list">
@@ -95,7 +96,7 @@
           <p class="program__text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
           <a class="program__catalog-link" href="catalog.html">
             <span class="program__catalog-text">Каталог pro</span>
-            <svg width="32" height="10">
+            <svg class="program__catalog-img" width="32" height="10">
               <use xlink:href="img/sprite.svg#icon-right-arrow-long"></use>
             </svg></a>
         </li>
@@ -225,7 +226,7 @@
         </div>
       </div>
       <div class="cooperation__map" aria-label="Карта местонахождения офиса">
-        <iframe class="cooperation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598912845434!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="cooperation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598912845434!5m2!1sru!2sru" height="400" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
     <div class="page-footer__link-wrapper">
@@ -234,8 +235,8 @@
           <img class="footer-logo__text-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </div>
-      <ul class="page-footer__list">
-        <div class="page-footer__item-wrapper">
+      <div class="page-footer__list-wrapper">
+        <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="page-footer__social-link" href="#">
               <svg class="page-footer__social-link-svg page-footer__social-link-svg--vk" width="23" height="16" aria-label="Вконтакте">
@@ -257,8 +258,8 @@
               </svg>
             </a>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
       <div class="page-footer__logo-html logo-html-academy">
         <a class="logo-html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="logo-html-academy__text">HTML Academy</span>

@@ -29,12 +29,10 @@
   }
 }
 
-.page-footer__list {
+.page-footer__list-wrapper {
   border-bottom: 1px solid $special_grey-3;
   border-top: 1px solid $special_grey-3;
-  margin: 0;
   padding: 20px;
-  list-style: none;
   min-width: 280px;
   display: flex;
   justify-content: center;
@@ -48,11 +46,14 @@
   }
 }
 
-.page-footer__item-wrapper {
+.page-footer__list {
   min-width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__link-wrapper {
@@ -92,6 +93,7 @@
     padding: 0;
     min-width: 163px;
     justify-content: space-between;
+    margin-top: -2px;
   }
 
   @media (min-width: $desktop-width) {

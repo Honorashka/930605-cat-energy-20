@@ -112,7 +112,7 @@ const copy = () => {
 
 //Build
 
-const build = gulp.series(clean, copy, styles, jsminify, minify, images, webpimg, sprite);
+const build = gulp.series(clean, copy, sprite, styles, jsminify, minify, images, webpimg);
 
 exports.build = build;
 

@@ -39,6 +39,7 @@
     width: 708px;
     margin-top: 0;
     margin-bottom: 33px;
+    padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -207,7 +208,7 @@
     line-height: 24px;
     padding-top: 44px;
     width: 495px;
-    margin-left: 48px;
+    margin-left: 52px;
 
     br {
       display: none;
@@ -251,7 +252,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 5px;
-    margin-left: 49px;
+    margin-left: 52px;
   }
 }
 
