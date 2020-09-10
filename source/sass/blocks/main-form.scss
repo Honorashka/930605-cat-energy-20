@@ -192,6 +192,10 @@
 
 .main-form__list--radio {
   padding-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .main-form__list--add {
@@ -423,7 +427,7 @@
   }
 }
 
-.main-form__wrapper--required {
+.main-form__required-wrapper {
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -463,6 +467,7 @@
     width: 1220px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
