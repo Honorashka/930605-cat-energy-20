@@ -192,6 +192,10 @@
 
 .main-form__list--radio {
   padding-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .main-form__list--add {

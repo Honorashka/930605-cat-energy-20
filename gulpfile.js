@@ -19,6 +19,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -80,7 +82,6 @@ const svgstore = require("gulp-svgstore");
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-    .pipe(svgstore())
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -141,5 +142,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );

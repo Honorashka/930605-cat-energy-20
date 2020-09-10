@@ -53,6 +53,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 5px;
 
     &:hover {
       opacity: 0.6;
@@ -73,10 +74,6 @@
     font-size: 20px;
     line-height: 30px;
 
-    &:visited {
-      border-bottom: 1px solid $basic_green;
-  }
-
     &:active {
       opacity: 1;
       border-bottom: 2px solid $basic_white;
@@ -92,5 +89,17 @@
   &:active {
     opacity: 1;
     border-bottom: 2px solid $basic_green;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic_green;
+  }
+}
+
+.site-list__link--active-index {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic_white;
   }
 }
