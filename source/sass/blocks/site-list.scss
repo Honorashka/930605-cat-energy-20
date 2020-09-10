@@ -73,6 +73,10 @@
     font-size: 20px;
     line-height: 30px;
 
+    &:visited {
+      border-bottom: 1px solid $basic_green;
+  }
+
     &:active {
       opacity: 1;
       border-bottom: 2px solid $basic_white;
